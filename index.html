@@ -4,10 +4,54 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite + React</title>
+        <link href="/src/index.css" rel="stylesheet" />
+        <title>Test Project</title>
     </head>
     <body>
-        <div id="root"></div>
+        <div
+            id='root: document.getElementById("root")).render(<StrictMode><App /></StrictMode>);'
+        ></div>
+        <h1 class="text-3xl font-bold">Test de Tailwind CSS</h1>
+        <p>Always follow below steps to Install React</p>
+        <p class="text-3x1 font-bold">Build Project</p>
+        <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+            https://vite.dev/guide/
+        </p>
+        <p>npm create vite@latest ...</p>
+        <p>Create Location</p>
+        <p>npm install -g create-vite | (Only one time)</p>
+        <p>1) npx create-vite@latest test-project --template react</p>
+        <p>2) cd test-project</p>
+        <p>3) npm install</p>
+        <p>4) npm run dev</p>
+        <p>5) git init</p>
+        <p class="text-3x1 font-bold">Install Tailwind CSS as a Vite plugin</p>
+        <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+            https://tailwindcss.com/docs/installation/using-vite
+        </p>
+        <p>1) npm install tailwindcss @tailwindcss/vite</p>
+        <p>2) In file vite.config.js</p>
+        <p>Add below code</p>
+        <p>import tailwindcss from "@tailwindcss/vite";</p>
+        <p>In the same code add</p>
+        <p>plugins: [react(), tailwindcss()],</p>
+        <p>3) In file index.css</p>
+        <p>@import "tailwindcss";</p>
+        <p>4) In file main.jsx</p>
+        <p>import "./index.css";</p>
+        <p>npm run dev</p>
+        <p class="text-3x1 font-bold">Just in my case</p>
+        <p>Will appear below issue</p>
+        <p>
+            error when starting dev server: Error: EPERM: operation not
+            permitted, rmdir 'C:\@ Mis Archivos\Aprendizaje
+            Autodidacta\Diplomado
+            Java\Module3\challenge\test-project\node_modules\.vite\deps'
+        </p>
+        <p>Due to we have @ and space between words</p>
+        <p class="text-3x1 font-bold">Solution</p>
+        <p>rm -rf node_modules</p>
+        <p>npm i</p>
         <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>
